@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+*{
+margin:0;
+padding:0%;
+/*box-sizing: border-box;*/
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+body{
+    margin: 0%;
+    padding: 50px;
+    border:30px;
+    color:#5c91b4 ;
+
+}
+
+header{
+    background-color:#624c2c ;
+    height:190px;
+
+}
+
+h1{
+    
+    color: beige;
+    font-size:55px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+nav{
+    background-color:#a58c78 ;
+    height: 30px;
+}
+h2{
+    color: rgba(245, 245, 220, 0.518);
+    font-size:55px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal
+
+
+}
+
+h3{
+    color: #5c91b4;
+    font-size: 23px;
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+main{
+    background-color: burlywood;
+    height: auto;
+}
+
+p{
+    color: #5c91b4;
+    font-size: 23px;
+        font-family: "Fascinate Inline", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+ a{
+    color: blanchedalmond;
+    text-decoration: none;
+ }
+ a:hover{
+    color:aquamarine;
+    text-decoration: none;
+ }
+ footer{
+    background-color: #624c2c;
+    height: 140px;
+    color: #5c91b4;
+        font-family: "Protest Guerrilla", sans-serif;
+        font-size: 500;
+        font-style: italic;
+      }
+      img{
+        width:auto;
+        height: 600px;
+      }
+      
+

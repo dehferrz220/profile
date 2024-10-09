@@ -25,13 +25,12 @@ header{
     margin-top:17px;
     border-radius: 6px 6px 5px 5px;
     height:190px;
-    width:90ww;
-    text-align: center;
+    /* width:90px;
+    */
 
 }
 header>h1{
-
-    text-align: center;
+ text-align: center;
     color: aliceblue;
     padding: 6px;
     text-shadow: #e3343c 1px 1px 10px;
@@ -47,7 +46,7 @@ h1{
 }
 #burger {
     background-color:#ca1919;
-    display: block;
+    display:block;
     color: whitesmoke;
     text-align: center;
     border-radius: 6px 6px 6px 6px;
@@ -64,17 +63,17 @@ h1{
 menu{
     color:#0b793994 ;
     font-family: 'Courier New', Courier, monospace;
-    text-align:center;
+    text-align: center;
     list-style-type: none;
     width: 90ww;
     margin:auto;
-    display:none;
+    display: block;
     
-   
 }
 
 menu>ul {
-    list-style-type: none;
+    list-style-type:none;
+   
    
 }
 menu>ul>li>a {
@@ -95,7 +94,21 @@ menu>ul>li>a:hover {
   padding:7px;
   width: 90vw;
 }
-
+ #iconnav{
+       
+       margin: 0px;   
+        width: 25px;
+        height:25px;
+      
+    }
+ a{
+    color: #b00f17;
+    text-decoration: none;
+ }
+ a:hover{
+    color:rgb(6, 106, 73);
+    text-decoration: none;
+ }
 main{
  
     background-color: #790b11;
@@ -107,9 +120,7 @@ main{
 
 
 }
-
-
-article>h2{
+  article>h2{
     color:#bb483b;
     font-size:45px;
     font-family: "Playfair Display", serif;
@@ -117,16 +128,67 @@ article>h2{
     padding-bottom: 19px;
     font-style: normal
 
-
+  }
+  /* Estilizar todos os botões */
+button {
+  background-color: #b00f17; /* Cor de fundo */
+  color: #ffffff; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border:block; /* Remover borda */
+  border-radius: 5px 5px 5px 5px; /* Arredondar cantos */
+  cursor: pointer; /* Mudar cursor para ponteiro */
 }
-article>p{
+
+/* Estilizar botão específico com ID */
+#botao-1 {
+  background-color: #b00f17; /* Cor de fundo vermelha */
+}
+
+#botao-2 {
+  background-color: #b00f17; /* Cor de fundo verde */
+}
+
+#botao-3 {
+  background-color: #0000ff; /* Cor de fundo azul */
+}
+
+/* Estilizar hover */
+button:hover {
+  background-color:#c72b0f; /* Cor de fundo ao passar o mouse */
+  color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilizar focus */
+button:focus {
+  box-shadow: 0 0 10px #333; /* Sombra ao clicar */
+}
+  .container {
+    display: flex;
+    /* Para espaçamento entre os itens */
+    align-items: center; /* Alinha os itens ao topo */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se necessário */
+}
+
+  .content img {
+    margin: 10px;
+    padding: 15px;
+    border-style: double;
+    border-color:#c72b0f;
+    border-radius: 10px 10px 10px 10px;
+    
+  }
+  
+  .content p {
+    margin: 10px;
     color: #986b66;
     font-size: 23px;
     font-family:"Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
-}
-article>h3{
+  }
+  
+  .content h3 {
+    margin: 1px;
     color:#bb483b;
     font-size:45px;
     font-family: "Playfair Display", serif;
@@ -134,24 +196,8 @@ article>h3{
     padding-bottom: 19px;
     font-style: normal
 
-}
+  }
 
-
-  #iconnav{
-        width: 29px;
-        height:29px;
-        align-items: center; 
-    }
- a{
-    color: #b00f17;
-    text-decoration: none;
- }
- a:hover{
-    color:rgb(6, 106, 73);
-    text-decoration: none;
- }
- 
- 
  footer{
     background-color:#a58c78;
     height:30px;
@@ -159,45 +205,46 @@ article>h3{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
+
       }
 
+      /* media queries */
  
 @media screen and (min-width: 768px) and (max-width : 1024px) {
 
-body {
+    body{
 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image:linear-gradient(to bottom, #930f14 , #730);
-    background-repeat:no-repeat;
-    background-position: top;
-    background-attachment: scroll;
-}
-
-header{
-    background-color:#930f14;
-    margin-top:3px;
-    border-radius: 6px 6px 0px 0px;
-    height:190px;
-    width:90ww;
-    text-align: center;
-
-}
-header>h1{
-
-    text-align: center;
-    color: aliceblue;
-    padding: 3px;
-    text-shadow: #e3343c 1px 1px 10px;
-}
-h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-image:linear-gradient(to bottom, #930f14 , #730);
+        background-repeat:no-repeat;
+        background-position: top;
+        background-attachment: scroll;
+    }
     
-    color: beige;
-    font-size:65px;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-}
+    header{
+        background-color:#930f14;
+        margin-top:17px;
+        border-radius: 6px 6px 5px 5px;
+        height:190px;
+        /* width:90px;
+        */
+    
+    }
+    header>h1{
+     text-align: center;
+        color: aliceblue;
+        padding: 6px;
+        text-shadow: #e3343c 1px 1px 10px;
+    }
+    h1{
+        
+        color: beige;
+        font-size:65px;
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
 #burger {
     background-color:#ca1919;
     display: block;
@@ -251,16 +298,14 @@ main{
  
     background-color: #790b11;
     text-align: center;
-    border-radius:0px 0px 7px 7px;
+    border-radius:7px 7px 7px 7px;
     width: 90ww;
     padding: 7px;
     margin: auto;
 
 
 }
-
-
-article>h2{
+  article>h2{
     color:#bb483b;
     font-size:45px;
     font-family: "Playfair Display", serif;
@@ -268,35 +313,43 @@ article>h2{
     padding-bottom: 19px;
     font-style: normal
 
-
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
 }
-article>p{
+  
+  .content img {
+    margin: 10px;
+    padding: 15px;
+    border-style: double;
+    border-radius: 5px 5px 5px 5px;
+  }
+  
+  .content p {
+    margin: 10px;
+    width: 60%;
     color: #986b66;
     font-size: 23px;
     font-family:"Playfair Display", serif;
     font-weight: 400;
     font-style: normal;
-}
-
-img{
-  justify-content: center;
+  }
   
+  .content h3 {
+    margin: 10px;
+    width: 60%;
+    color:#bb483b;
+    font-size:45px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    padding-bottom: 19px;
+    font-style: normal
+
   }
 
-
-  #iconnav{
-        width: 25px;
-        height:25px;
-        align-items:center; 
-    }
- a{
-    color: #b00f17;
-    text-decoration: none;
- }
- a:hover{
-    color:rgb(6, 106, 73);
-    text-decoration: none;
- }
  footer{
     background-color:#a58c78;
     height:30px;
@@ -304,9 +357,6 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
- }
-}
 
-
-
- 
+      }
+    }

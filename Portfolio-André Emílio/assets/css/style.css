@@ -12,9 +12,8 @@ html{
 }
 
 body{
-
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image:linear-gradient(to bottom, #930f14 , #730);
+    background-image:linear-gradient(to bottom, #562829 , #730);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     background-repeat:no-repeat;
     background-position: top;
     background-attachment: scroll;
@@ -22,7 +21,7 @@ body{
 
 header{
     background-color:#930f14;
-    margin-top:17px;
+    margin-top:2px;
     border-radius: 6px 6px 5px 5px;
     height:190px;
     /* width:90px;
@@ -129,6 +128,42 @@ main{
     font-style: normal
 
   }
+  /* Estilizar todos os botões */
+button {
+  background-color: #b00f17; /* Cor de fundo */
+  color: #ffffff; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border:block; /* Remover borda */
+  border-radius: 5px 5px 5px 5px; /* Arredondar cantos */
+  cursor: pointer; /* Mudar cursor para ponteiro */
+}
+
+/* Estilizar botão específico com ID */
+#botao-1 {
+  background-color: #b00f17; /* Cor de fundo vermelha */
+}
+
+#botao-2 {
+  background-color: #b00f17; /* Cor de fundo vermelha */
+}
+
+#botao-3 {
+  background-color: #b00f17; /* Cor de fundo vermelha */
+}
+#botao-4 {
+  background-color: #b00f17; /*Cor de fundo vermelha */
+}
+
+/* Estilizar hover */
+button:hover {
+  background-color:#c72b0f; /* Cor de fundo ao passar o mouse */
+  color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilizar focus */
+button:focus {
+  box-shadow: 0 0 10px #333; /* Sombra ao clicar */
+}
   .container {
     display: flex;
     /* Para espaçamento entre os itens */
@@ -155,7 +190,7 @@ main{
   }
   
   .content h3 {
-    margin: 10px;
+    margin: 1px;
     color:#bb483b;
     font-size:45px;
     font-family: "Playfair Display", serif;
@@ -281,23 +316,24 @@ main{
     font-style: normal
 
   }
-  .content {
+  .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
+    /* Para espaçamento entre os itens */
+    align-items: center; /* Alinha os itens ao topo */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha seguinte se necessário */
 }
-  
+
   .content img {
     margin: 10px;
     padding: 15px;
     border-style: double;
-    border-radius: 5px 5px 5px 5px;
+    border-color:#c72b0f;
+    border-radius: 10px 10px 10px 10px;
+    
   }
   
   .content p {
     margin: 10px;
-    width: 60%;
     color: #986b66;
     font-size: 23px;
     font-family:"Playfair Display", serif;
@@ -306,8 +342,7 @@ main{
   }
   
   .content h3 {
-    margin: 10px;
-    width: 60%;
+    margin: 1px;
     color:#bb483b;
     font-size:45px;
     font-family: "Playfair Display", serif;
